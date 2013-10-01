@@ -8,8 +8,12 @@ module Jekyll
     def initialize(site, base, period, posts)
       @site = site
       @base = base
-      permalink_top = site.config['permalink'].split("/:year")[0] + '/'
-      @dir  = "#{permalink_top}#{period['year']}/#{period['month']}"
+      if site.config['permalink'].start_with?("/blog/:year/")
+        archive_dir = "/blog"
+      else
+        archive_dir = ""
+      end
+      @dir  = "#{archive_dir}/#{period['year']}/#{period['month']}"
       @name = 'index.html'
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'monthly_index.html')

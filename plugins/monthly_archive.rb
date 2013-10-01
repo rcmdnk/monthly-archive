@@ -46,7 +46,11 @@ module Jekyll
 
     def render(context)
       config = context.registers[:site].config
-      permalink_top = config['permalink'].split("/:year")[0] + '/'
+      if config['permalink'].start_with?("/blog/:year/")
+        archive_dir = "/blog"
+      else
+        archive_dir = ""
+      end
       html = ""
       html << "<ul class=\"year_list\">"
       posts = context.registers[:site].posts.reverse
@@ -66,7 +70,7 @@ module Jekyll
           month = key_month["month_format"]
           month = month.upcase if @opts['upcase']
           html << "<li class=\"month\">"
-          html << "<a href='#{permalink_top}/#{key_year["year"]}/#{key_month["month"]}/'>#{month}"
+          html << "<a href='#{archive_dir}/#{key_year["year"]}/#{key_month["month"]}/'>#{month}"
           html << " (#{posts_month.count})" if @opts['counter']
           html << "</a></li>"
         end
