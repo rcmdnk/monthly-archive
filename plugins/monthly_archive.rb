@@ -56,7 +56,7 @@ module Jekyll
       posts = context.registers[:site].posts.reverse
       posts_years = posts.group_by{|c| {"year" => c.date.year}}
       posts_years.each do |key_year, posts_year|
-        html << "<div><li class=\"year"
+        html << "<li class=\"year"
         html << " first_open" if @opts['first_open']
         html << "\">#{key_year["year"]}"
         html << " (#{posts_year.count})" if @opts['counter']
@@ -74,7 +74,7 @@ module Jekyll
           html << " (#{posts_month.count})" if @opts['counter']
           html << "</a></li>"
         end
-        html << "</ul></div>"
+        html << "</ul>"
       end
       html << "</ul>"
       html
