@@ -69,3 +69,7 @@ Possible options are:
 
 # Example
 Check `Monthly Arhives` in sidebar of the blog: http://rcmdnk.github.io/.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rcmdnk/monthly-archive/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
