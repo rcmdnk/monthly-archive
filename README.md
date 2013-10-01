@@ -66,3 +66,6 @@ Possible options are:
 * monthly_title_prefix (Default: `Archive: `)
 * monthly_format (Possible values are same as above sidebar part. Default: `JAN:`)
 
+
+# Example
+Check `Monthly Arhives` in sidebar of the blog: http://rcmdnk.github.io/.
