@@ -6,28 +6,30 @@ Sidebar part of Monthly Archive for Octopress.
 # Installation
 
 1. Copy `plugins/monthly_archive.rb` and `plugins/monthly_generator.rb`
-to your `plugins` directory.
+   to your `plugins` directory.
 
 1. Copy `sass/plugins/_monthly_archive.scss` to your `sass/plugins/` directory,
-and add a line:
+   and add a line:
 
     `@import "monthly_archive"`
-to `sass/plugins/_plugins.scss`.
+
+   to `sass/plugins/_plugins.scss`.
 
 1. Copy `sass/plugins/_monthly_archive.scss` to your `sass/plugins/` directory,
 
 1. Copy `source/javascripts/monthly_archive.js` to your
-`source/javascripts/` directory,
-and add a line:
+   `source/javascripts/` directory,
+   and add a line:
 
     `<script src="{{root_url}}/javascripts/monthly_archive.js"></script>`
-to `source/_includes/custom/head.html`.
+
+   to `source/_includes/custom/head.html`.
 
 1. Copy `source/_layouts/monthly_index.html`
-to your `source/_layouts/` directory.
+   to your `source/_layouts/` directory.
 
 1. Copy `source/_includes/custom/asides/monthly_archive.html`
-to your `source/_includes/custom/asides/` directory.
+   to your `source/_includes/custom/asides/` directory.
 
 Done!
 
