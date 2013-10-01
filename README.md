@@ -11,8 +11,7 @@ to your `plugins` directory.
 1. Copy `sass/plugins/_monthly_archive.scss` to your `sass/plugins/` directory,
 and add a line:
 
-    @import "monthly_archive"
-
+    `@import "monthly_archive"`
 to `sass/plugins/_plugins.scss`.
 
 1. Copy `sass/plugins/_monthly_archive.scss` to your `sass/plugins/` directory,
@@ -21,8 +20,7 @@ to `sass/plugins/_plugins.scss`.
 `source/javascripts/` directory,
 and add a line:
 
-    <script src="{{root_url}}/javascripts/monthly_archive.js"></script>
-
+    `<script src="{{root_url}}/javascripts/monthly_archive.js"></script>`
 to `source/_includes/custom/head.html`.
 
 1. Copy `source/_layouts/monthly_index.html`
@@ -39,7 +37,7 @@ Add `custom/asides/monthly_archive.html` to `default_asdies` in `_config.yml`.
 # Options
 
 ## Sidebar part representation
-Sidebar part representation can be changed by changing options
+Sidebar part representation can be changed by options
 for `monthly_archive` tag in `source/_layouts/monthly_index.html`.
 
 Use `option:value` for each option:
@@ -54,15 +52,15 @@ The default is same as:
 
     {% monthly_archive counter:true first_open:false month_format:JAN %}
 
-## Index pages represetation
-Title of Index pages can be changed from `_config.yml`
+## Index pages title
+A title of the index page can be changed in `_config.yml`.
 
-Title is formatted like:
+The title is formatted like:
 
     "monthly_title_prefix""month(monthly_format)" "year"
 
 Possible options are:
 
-* monthly_title_prefix: Default: `Archive:`
-* monthly_format: Possible values are same as above sidebar part. Default: `JAN:`
+* monthly_title_prefix (Default: `Archive: `)
+* monthly_format (Possible values are same as above sidebar part. Default: `JAN:`)
 
