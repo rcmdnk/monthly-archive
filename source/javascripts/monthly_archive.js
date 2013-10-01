@@ -8,5 +8,7 @@ jQuery(function($){
       }
     });
   }).next().hide();
-  $('.first_open:first').next().show();
+  $('.first_open:first').next().show(function(){
+    $(this).prev().addClass('open');
+  });
 });
