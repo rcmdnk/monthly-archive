@@ -38,7 +38,7 @@ Add `custom/asides/monthly_archive.html` to `default_asdies` in `_config.yml`.
 
 ## Sidebar part representation
 Sidebar part representation can be changed by options
-for `monthly_archive` tag in `source/_layouts/monthly_index.html`.
+for `monthly_archive` tag in `source/_includes/custom/asides/monthly_archive.html`.
 
 Use `option:value` for each option:
 
