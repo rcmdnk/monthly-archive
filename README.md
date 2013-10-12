@@ -22,8 +22,12 @@ Sidebar part of Monthly Archive for Octopress.
 
    to `source/_includes/custom/head.html`.
 
-1. Copy `sass/plugins/_monthly_archive.scss` to your `sass/plugins/` directory,
-   and add a line:
+1. Copy `sass/plugins/_monthly_archive.scss` 
+   to your `sass/plugins/` directory.
+
+   If you have old octopress
+   (if your `sass/screen.scss` doesn't have `@import "plugins/**/*";`),
+   you may need to add
 
     `@import "monthly_archive"`
 
