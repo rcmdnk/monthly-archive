@@ -52,6 +52,7 @@ module Jekyll
         archive_dir = ""
       end
       html = ""
+      html << "<div class=\"monthly_archive\">"
       html << "<ul class=\"year_list\">"
       posts = context.registers[:site].posts.reverse
       posts_years = posts.group_by{|c| {"year" => c.date.year}}
@@ -77,6 +78,7 @@ module Jekyll
         html << "</ul>"
       end
       html << "</ul>"
+      html << "</div>"
       html
     end
   end
