@@ -1,4 +1,4 @@
-jQuery(function($){
+$(function(){
   $('.year').click(function(){
     $(this).next().slideToggle('fast', function(){
       if($(this).is(':hidden')){
