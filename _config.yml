@@ -1,0 +1,7 @@
+# Monthly Archive
+monthly_archive_count: true
+monthly_archive_open: first
+monthly_archive_format: Jan
+
+monthly_title_prefix: "Archive:"
+monthly_format: JAN

@@ -40,23 +40,18 @@ Add `custom/asides/monthly_archive.html` to `default_asdies` in `_config.yml`.
 
 # Options
 
-## Sidebar part representation
-Sidebar part representation can be changed by options
-for `monthly_archive` tag in `source/_includes/custom/asides/monthly_archive.html`.
+## Sidebar view representation
 
-Use `option:value` for each option:
+Sidebar view can be set in **_config.yml**.
 
 |Option|Possible Values|Default|Description|
 |:-----|:-------------:|:-----:|:----------|
-|counter|true/false|true|Show number of posts.|
-|first_open|true/false|false|Open the latest year list at first.|
-|month_format|Jan/JAN/January/JANUARY/01/1|JAN|Month representation format.|
-
-The default is same as:
-
-    {% monthly_archive counter:true first_open:false month_format:JAN %}
+|monthly_archive_count|true/false|true|Show the number of posts.|
+|monthly_archive_open|first/latest/all/nil|Define the first view if each year's list is opened or not. first or latest: open only the latest year. all: open all years. nil or any kind of values: close all years.|
+|monthly_archive_format|Jan/JAN/January/JANUARY/01/1|JAN|Month view format.|
 
 ## Index pages title
+
 A title of the index page can be changed in `_config.yml`.
 
 The title is formatted like:
@@ -71,7 +66,3 @@ Possible options are:
 
 # Example
 Check `Monthly Arhives` in sidebar of the blog: http://rcmdnk.github.io/.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rcmdnk/monthly-archive/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
