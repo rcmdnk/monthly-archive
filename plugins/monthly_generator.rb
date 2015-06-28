@@ -68,8 +68,6 @@ module Jekyll
 
     def write_archive_index(site, period, posts)
       index = MonthlyIndex.new(site, site.source, period, posts)
-      index.render(site.layouts, site.site_payload)
-      index.write(site.dest)
       site.pages << index
     end
   end
