@@ -3,7 +3,7 @@ monthly-archive
 
 Sidebar part of Monthly Archive for Octopress.
 
-# Installation
+## Installation
 
 1. Copy `plugins/monthly_archive.rb` and `plugins/monthly_generator.rb`
    to your `plugins` directory.
@@ -35,12 +35,13 @@ Sidebar part of Monthly Archive for Octopress.
 
 Done!
 
-# Usage
+## Usage
+
 Add `custom/asides/monthly_archive.html` to `default_asdies` in `_config.yml`.
 
-# Options
+## Options
 
-## Sidebar view representation
+### Sidebar view representation
 
 Sidebar view can be set in **_config.yml**.
 
@@ -50,7 +51,7 @@ Sidebar view can be set in **_config.yml**.
 |monthly_archive_open|first/latest/all/nil|Define the first view if each year's list is opened or not. first or latest: open only the latest year. all: open all years. nil or any kind of values: close all years.|
 |monthly_archive_format|Jan/JAN/January/JANUARY/01/1|JAN|Month view format.|
 
-## Index pages title
+### Index pages title
 
 A title of the index page can be changed in `_config.yml`.
 
