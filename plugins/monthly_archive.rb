@@ -47,7 +47,7 @@ module Jekyll
       html = ""
       html << "<div class=\"monthly_archive\">"
       html << "<ul>"
-      posts = context.registers[:site].posts.reverse
+      posts = context.registers[:site].posts.docs.reverse
       posts_years = posts.group_by{|c| {"year" => c.date.year}}
       posts_years.each_with_index do |(key_year, posts_year), index|
         html << "<li><span class=\"monthly_archive_year_span\">#{key_year["year"]}"

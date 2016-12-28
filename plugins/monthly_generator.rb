@@ -58,7 +58,7 @@ module Jekyll
 
     def generate(site)
       if site.layouts.key? 'monthly_index'
-        site.posts.reverse.group_by{|c| {"month" => c.date.strftime('%m'),\
+        site.posts.docs.reverse.group_by{|c| {"month" => c.date.strftime('%m'),\
                                          "year" => c.date.strftime('%Y')}\
                                    }.each do |period, posts|
           write_archive_index(site, period, posts)
