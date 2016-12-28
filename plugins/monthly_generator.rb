@@ -8,7 +8,7 @@ module Jekyll
     def initialize(site, base, period, posts)
       @site = site
       @base = base
-      if site.config['permalink'].start_with?("/blog/:year/")
+      if site.config['collections']['posts']['permalink'].start_with?("/blog/:year/")
         archive_dir = "/blog"
       else
         archive_dir = ""

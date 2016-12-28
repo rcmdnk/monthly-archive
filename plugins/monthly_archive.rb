@@ -39,7 +39,7 @@ module Jekyll
         upcase = false
       end
 
-      if config['permalink'].start_with?("/blog/:year/")
+      if config['collections']['posts']['permalink'].start_with?("/blog/:year/")
         archive_dir = "/blog"
       else
         archive_dir = ""
