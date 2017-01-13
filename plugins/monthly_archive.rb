@@ -45,14 +45,13 @@ module Jekyll
         archive_dir = ""
       end
       html = ""
-      html << "<div class=\"monthly_archive\">"
-      html << "<ul>"
+      html << "<div class=\"monthly_archive\"><ul>"
       posts = context.registers[:site].posts.docs.reverse
       posts_years = posts.group_by{|c| {"year" => c.date.year}}
       posts_years.each_with_index do |(key_year, posts_year), index|
         html << "<li><span class=\"monthly_archive_year_span\">#{key_year["year"]}"
         html << " (#{posts_year.count})" if count
-        html << "</span></li>"
+        html << "</span>"
         html << "<ul class=\"monthly_archive_month_list"
         if open == 'all' or\
           (open == 'first' and index == 0)
@@ -71,10 +70,9 @@ module Jekyll
           html << " (#{posts_month.count})" if count
           html << "</a></li>"
         end
-        html << "</ul>"
+        html << "</ul></li>"
       end
-      html << "</ul>"
-      html << "</div>"
+      html << "</ul></div>"
       html
     end
   end
