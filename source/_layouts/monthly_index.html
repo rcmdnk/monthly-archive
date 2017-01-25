@@ -5,10 +5,10 @@ sharing: true
 footer: true
 ---
 
-<div id="blog-archives" class="monthly" itemscope itemtype="http://schema.org/Blog">
+<div id="blog-archives" class="monthly" itemscope itemtype="https://schema.org/Blog">
 {% assign index = true %}
 {% for post in page.period_posts %}
-<article class="index-article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="index-article" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   {% include archive_post.html %}
 </article>
 {% endfor %}
